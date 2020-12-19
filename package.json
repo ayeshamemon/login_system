@@ -1,0 +1,24 @@
+{
+  "name": "login_system",
+  "version": "1.0.0",
+  "description": "Login System",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayeshamemon/login_system.git"
+  },
+  "author": "Ayesha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayeshamemon/login_system/issues"
+  },
+  "homepage": "https://github.com/ayeshamemon/login_system#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
