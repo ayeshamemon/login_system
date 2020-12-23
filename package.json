@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/ayeshamemon/login_system#readme",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.8",
     "nodemon": "^2.0.6"
   }
 }
