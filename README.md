@@ -6,3 +6,5 @@
         <li>Register</li>
     </ul>
 </div>
+
+<h1>Getting Started</h1>
