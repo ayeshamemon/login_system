@@ -31,4 +31,8 @@ router.post("/register", loggerMiddleware, authController.register);
 // router.put("/update", updateMiddleware, updateController.update);
 // router.delete("/delete", deleteMiddleware, deleteController.delete);
 
+router.all("*", (req, res) => {
+  res.status(404).send({ message: "The server is not able to find the page" });
+});
+
 module.exports = router;
