@@ -7,6 +7,23 @@ const connection = mongoose.connect("mongodb://localhost/login_system", {
 });
 module.exports = connection;
 
+//singletomn class
+// class DBConnection {
+//   static connection = null;
+//   constructor() {}
+//   getInstance() {
+//     if (!connection) {
+//       return connection;
+//     }
+//     return mongoose.connect("mongodb://localhost/login_system", {
+//       useNewUrlParser: true,
+//       useUnifiedTopology: true,
+//       useFindAndModify: false,
+//       useCreateIndex: true,
+//     });
+//   }
+// }
+//export the class
 //used mongodb native database:
 
 // const { MongoClient } = require("mongodb");
