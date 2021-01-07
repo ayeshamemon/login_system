@@ -83,12 +83,10 @@ class AuthController {
           updatedUserAddressReference.nModified === 1 &&
           savedUserAddress._id
         ) {
-          return res
-            .status(200)
-            .json(
-              { message: "The address is updated successfully" },
-              savedUserAddress
-            );
+          return res.status(200).json({
+            message: "The address is updated successfully",
+            savedUserAddress,
+          });
         }
 
         return res
@@ -176,7 +174,7 @@ class AuthController {
     // const con = new DBConnection();
     // const connection = await con.getInstance();
     if (isEmailValid) {
-      const token = jwt.sign(req.body, "Ayesha", { expiresIn: 3600 });
+      const token = jwt.sign(req.body, "Ayesha", { expiresIn: "2d" });
       console.log(token);
       try {
         let result = await authService.loginService(email);
